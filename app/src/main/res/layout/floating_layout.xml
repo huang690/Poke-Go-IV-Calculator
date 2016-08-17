@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:id="@+id/drop_down_float"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingRight="10px"
+			android:text="Poke:"/>
+
+		<EditText
+			android:id="@+id/pokemon_name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Eevee"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingRight="10px"
+			android:text="CP:"/>
+
+		<EditText
+			android:id="@+id/pokemon_cp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:ems="4"
+			android:inputType="numberSigned"
+			android:maxLength="3"
+			android:text="320"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingRight="10px"
+			android:text="HP:"/>
+
+		<EditText
+			android:id="@+id/pokemon_hp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:ems="3"
+			android:inputType="numberSigned"
+			android:maxLength="3"
+			android:text="51"/>
+
+		<Button
+			android:id="@+id/powered_up_toggle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="No"
+			android:onClick="togglePowerUp"
+			android:layout_marginLeft="30px"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingRight="10px"
+			android:text="Powerup cost:"/>
+
+		<EditText
+			android:id="@+id/pokemon_power_cost"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:ems="4"
+			android:inputType="numberSigned"
+			android:maxLength="5"
+			android:text="1300"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="grabAllData"
+			android:text="GO"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="refineData"
+			android:text="Refine"/>
+
+	</LinearLayout>
+
+
+</LinearLayout>
